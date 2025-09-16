@@ -1,0 +1,621 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #1e233e;
+}
+
+/* Navigation */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e233e;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #cdb876;
+  border-radius: 8px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #1e233e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #cdb876;
+}
+
+.nav-contact {
+  background-color: #cdb876;
+  color: #1e233e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-contact:hover {
+  background-color: #b8a566;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(30, 35, 62, 0.7), rgba(30, 35, 62, 0.7)),
+    url("/modern-luxury-villa-architecture-with-glass-walls-.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #cdb876;
+  max-width: 600px;
+  line-height: 1.2;
+}
+
+.btn-primary {
+  background-color: #cdb876;
+  color: #1e233e;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #b8a566;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(205, 184, 118, 0.3);
+}
+
+/* Services Section */
+.services {
+  padding: 80px 0;
+  background-color: #1e233e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.service-item {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #cdb876;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #1e233e;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.service-item p {
+  color: #aeaeae;
+  font-size: 14px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 80px 0;
+  background-color: #1e233e;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #cdb876;
+}
+
+.project-info p {
+  color: #aeaeae;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.project-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+/* Featured Villa Section */
+.featured-villa {
+  padding: 80px 0;
+  background-color: #1e233e;
+}
+
+.villa-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.villa-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.villa-info h2 {
+  font-size: 36px;
+  color: #cdb876;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.villa-info p {
+  color: #aeaeae;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.villa-features {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #cdb876;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #1e233e;
+}
+
+/* Company Section */
+.company {
+  padding: 80px 0;
+  background-color: #1e233e;
+}
+
+.company-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.company-info h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.company-info h3 {
+  font-size: 24px;
+  color: #cdb876;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.company-info p {
+  color: #aeaeae;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #cdb876;
+  display: block;
+}
+
+.stat-label {
+  color: #aeaeae;
+  font-size: 14px;
+}
+
+.company-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 0;
+  background-color: #1e233e;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.contact-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  color: #cdb876;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aeaeae;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #cdb876;
+}
+
+/* Map Section */
+.map-section {
+  padding: 80px 0;
+  background-color: #1e233e;
+}
+
+.map-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background-color: #192124;
+  padding: 60px 0 30px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: #cdb876;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #aeaeae;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #cdb876;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #cdb876;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e233e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #b8a566;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+  text-align: center;
+  color: #aeaeae;
+  font-size: 14px;
+}
+
+/* Decorative Elements */
+.decorative-divider {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.divider-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #cdb876, transparent);
+  margin: 20px 0;
+}
+
+.divider-ornament {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #cdb876;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.divider-ornament::before,
+.divider-ornament::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #1e233e;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .villa-container,
+  .company-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .services-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .villa-features {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .services,
+  .projects,
+  .featured-villa,
+  .company,
+  .contact,
+  .map-section {
+    padding: 40px 0;
+  }
+}
