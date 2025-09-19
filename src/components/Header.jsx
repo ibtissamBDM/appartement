@@ -24,7 +24,7 @@ const Header = () => {
             <a href="#">Services</a>
           </li>
         </ul>
-        <div className="search">
+        <div className="search" onMouseEnter={(e) => (e.currentTarget.style.width = "300px")} onMouseLeave={(e) => (e.currentTarget.style.width = "fit-content")}>
           <Search className="nav_item"/>
         </div>
       </nav>
